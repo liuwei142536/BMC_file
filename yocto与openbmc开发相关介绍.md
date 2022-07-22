@@ -531,38 +531,44 @@ devtool deploy-target [recipe name] [root@x.x.x.x]  部署配方生成文件到�
 ## git常用命令
 
 - 全局配置命令
-配置全局用户名：`git config --global user.name "xxx"`
-配置全局邮箱：`git config --global user.email "xx.xx@luxshare-ict.com"`
-存储用户名和密码：`git config --global credential.helper store`
+```shell
+配置全局用户名：git config --global user.name "xxx"
+配置全局邮箱：git config --global user.email "xx.xx@luxshare-ict.com"
+存储用户名和密码：git config --global credential.helper store
+```
 
 - 远端仓库配置命令
-添加远端仓库：`git remote add <name> <url>`
-删除远端仓库：`git remote remove <name>`
-重命名远端仓库：`git remote rename <old> <new>`
-显示远端仓库信息：`git remote -v`
+```shell
+添加远端仓库：git remote add <name> <url>
+删除远端仓库：git remote remove <name>
+重命名远端仓库：git remote rename <old> <new>
+显示远端仓库信息：git remote -v
+```
 
 - 文件操作命令
-创建一个空仓库：`git init`
-从远端克隆一个仓库：`git clone <url>`
-同步远端仓库到本地仓库：`git pull`
-rebase方式同步：`git pull --rebase` 
+```shell
+创建一个空仓库：git init
+从远端克隆一个仓库：git clone <url>
+同步远端仓库到本地仓库：git pull
+rebase方式同步：git pull --rebase
 注：当本地有新的提交记录，远端仓库也有别人新的提交时，可以使用rebase方式同步远端，保证分支较为干净，不会产生mega的记录，最好实在每次本地commit前git pull一下同步远端
-同步本地仓库到远端：`git push`
-创建一个分支：`git branch <name>`
-查看所有分支：`git branch -a`
-切换分支：`git checkout -b <br name>`
-查看当前本地仓库状态：`git status`
-添加修改的文件到暂存区：`git add <filename>` 或`git add .`添加所有文件
-提交修改：`git commit -m "xxxx"`  xxx是本次提交修改点说明
-取消文件暂存：`git reset HEAD [filename]`
-回退上一次的提交：`git reset [--hard/--soft/--mixed] HEAD^`
+同步本地仓库到远端：git push
+创建一个分支：git branch <name>
+查看所有分支：git branch -a
+切换分支：git checkout -b <br name>
+查看当前本地仓库状态：git status
+添加修改的文件到暂存区：git add <filename>  或 git add . 添加所有文件
+提交修改：git commit -m "xxxx"  xxx是本次提交修改点说明
+取消文件暂存：git reset HEAD [filename]
+回退上一次的提交：git reset [--hard/--soft/--mixed] HEAD^
+```
 
 - 历史查询与patch生成
-查看提交历史：`git log`
-查看修改文件信息：`git log --summary`
-查看工作目录与上次提交的差异：`git diff HEAD`
-将上次提交生成patch文件：`git format-patch HEAD^`
+```shell
+查看提交历史：git log
+查看修改文件信息：git log --summary
+查看工作目录与上次提交的差异：git diff HEAD
+将上次提交生成patch文件：git format-patch HEAD^
 注：^的数量表示指定前几次的提交生成patch记录
-
-
+```
 
