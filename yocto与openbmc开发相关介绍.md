@@ -25,7 +25,7 @@ Yocto项目是一个开源协作项目，帮助开发人员为嵌入式产品*�
 - **Images：**生成的固件镜像。
 - **Application Development SDK：**与镜像一起生成或与 BitBake 单独生成的交叉开发工具。
 
-![image-20220630200753820](.image/image-20220630200753820.png)
+<img src=".image/image-20220630200753820.png" alt="image-20220630200753820" style="zoom:80%;" />
 
 1. 开发人员指定体系结构、策略、补丁程序和配置的详细信息。
 2. 构建系统从指定位置提取并下载源代码。构建系统支持标准方法（如压缩包）或源代码存储库系统（如 Git）。
@@ -75,27 +75,27 @@ Yocto项目是一个开源协作项目，帮助开发人员为嵌入式产品*�
 
    用户配置帮助我们定义构建的过程，通过配置，我们可以告诉编译系统我们生成镜像的架构，源码从哪里下载和一些其他的编译属性。
 
-   <img src=".image\image-20220718164143516.png" alt="image-20220718164143516" style="zoom:67%;" />
+   <img src=".image/image-20220718164143516.png" alt="image-20220718164143516" style="zoom:67%;" />
 
 
 2. 元数据、machine和distro配置
 
-   <img src=".image\image-20220721171240635.png" alt="image-20220721171240635" style="zoom:80%;" />
+   <img src=".image/image-20220721171240635.png" alt="image-20220721171240635" style="zoom:80%;" />
 
 3. 源文件
 
-   <img src="C:\Users\78000576\AppData\Roaming\Typora\typora-user-images\image-20220721171303947.png" alt="image-20220721171303947" style="zoom:80%;" />
+   <img src=".image/image-20220721171303947.png" alt="image-20220721171303947" style="zoom:80%;" />
 
 4. Package Feed
 
-   <img src=".image\image-20220721171402652.png" alt="image-20220721171402652" style="zoom:80%;" />
+   <img src=".image/image-20220721171402652.png" alt="image-20220721171402652" style="zoom:80%;" />
 
 
 ## Openbmc介绍
 
 ### OpenBmc简化框架
 
-![image-20220706133526912](.image\image-20220706133526912.png)
+![image-20220706133526912](.image/image-20220706133526912.png)
 
 
 ### OpenBmc开发环境与构建
@@ -375,7 +375,7 @@ A(开始) --> B[解析配方文件]
 
 1. 获取和提取源代码
 
-   <img src=".image\image-20220721145825339.png" alt="image-20220721145825339" style="zoom:80%;" />
+   <img src=".image/image-20220721145825339.png" alt="image-20220721145825339" style="zoom:80%;" />
 
    获取和提取源代码到build的目录，构建过程中产生的所东西都在build目录下面。
 
@@ -397,23 +397,23 @@ A(开始) --> B[解析配方文件]
 
 2. 补丁 – 应用补丁进行错误修复和新功能
 
-   <img src=".image\image-20220721152930042.png" alt="image-20220721152930042" style="zoom:80%;" />
+   <img src=".image/image-20220721152930042.png" alt="image-20220721152930042" style="zoom:80%;" />
 
    
 
 3. 配置，编译和安装
 
-   <img src=".image\image-20220721155531001.png" alt="image-20220721155531001" style="zoom:80%;" />
+   <img src=".image/image-20220721155531001.png" alt="image-20220721155531001" style="zoom:80%;" />
 
    
 
 4. 打包 - 生成安装包
 
-   <img src=".image\image-20220721155710250.png" alt="image-20220721155710250" style="zoom:80%;" />
+   <img src=".image/image-20220721155710250.png" alt="image-20220721155710250" style="zoom:80%;" />
 
 5. 固件生成
 
-   <img src=".image\image-20220721155653196.png" alt="image-20220721155653196" style="zoom:80%;" />
+   <img src=".image/image-20220721155653196.png" alt="image-20220721155653196" style="zoom:80%;" />
 
 
 
@@ -561,7 +561,7 @@ rebase方式同步：`git pull --rebase`
 查看提交历史：`git log`
 查看修改文件信息：`git log --summary`
 查看工作目录与上次提交的差异：`git diff HEAD`
-将上次提交生成patch文件：`git format-patch HEAD^`  
+将上次提交生成patch文件：`git format-patch HEAD^`
 注：^的数量表示指定前几次的提交生成patch记录
 
 
