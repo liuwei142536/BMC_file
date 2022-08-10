@@ -150,9 +150,9 @@ mapperx服务中调用如下。
 
 ```c++
 	//将函数nameChangeHandler和消息类型绑定。
-    sdbusplus::bus::match::match nameOwnerChanged(
-        static_cast<sdbusplus::bus::bus&>(*systemBus),
-        sdbusplus::bus::match::rules::nameOwnerChanged(), nameChangeHandler);
+    sdbusplus::bus::match::match nameOwnerChanged(
+        static_cast<sdbusplus::bus::bus&>(*systemBus),
+        sdbusplus::bus::match::rules::nameOwnerChanged(), nameChangeHandler);
 
 ```
 
